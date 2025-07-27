@@ -57,11 +57,11 @@ python -c "import agentbeats; print('AgentBeats SDK installed successfully!')"
 ### Environment Variables
 ```bash
 # Set API keys
-export OPENROUTER_API_KEY=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
+export OPENROUTER_API_KEY=[YOUR_API_KEY_HERE]
 export OPENROUTER_BASE_URL="https://openrouter.ai/api/v1"
 
 # Add to bashrc for persistence
-echo 'export OPENROUTER_API_KEY=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' >> ~/.bashrc
+echo 'export OPENROUTER_API_KEY=[YOUR_API_KEY_HERE]' >> ~/.bashrc
 echo 'export OPENROUTER_BASE_URL="https://openrouter.ai/api/v1"' >> ~/.bashrc
 ```
 
@@ -90,7 +90,7 @@ agentbeats run template_injection_card.toml \
             --launcher_port 9010 \
             --agent_host 0.0.0.0 \
             --agent_port 9011 \
-            --backend "https://nuggets.puppy9.com/api" \
+            --backend "https://agentbeats.org/api" \
             --tool template_injection_tools.py \
             --model_type openrouter \
             --model_name x-ai/grok-3-mini
